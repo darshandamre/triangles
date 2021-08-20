@@ -95,12 +95,16 @@ button {
   font-size: 1.2rem;
   margin-top: 0.75em;
   padding: 0.5em 1em;
+
+  color: var(--white);
+  background-color: var(--black);
+
   border-radius: 10px;
   border: 2px solid var(--black);
   cursor: pointer;
 }
 
 button:hover {
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--black);
+  background-color: var(--off-white);
 }
