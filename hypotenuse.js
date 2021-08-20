@@ -9,11 +9,15 @@ const calculateHypoBtn = document.querySelector(".btn--hypo");
 const output = document.getElementById("output");
 
 const calculateHypotenuse = () => {
-  let hypotenuse =
-    Math.round(
-      Math.sqrt(sideA.value * sideA.value + sideB.value * sideB.value) * 100
-    ) / 100;
-  output.innerText = `The length of the hypotenuse is ${hypotenuse}`;
+  if (sideA.value && sideB.value) {
+    let hypotenuse =
+      Math.round(
+        Math.sqrt(sideA.value * sideA.value + sideB.value * sideB.value) * 100
+      ) / 100;
+    output.innerText = `The length of the hypotenuse is ${hypotenuse}`;
+  } else {
+    output.innerText = "Please enter length of both sides";
+  }
 };
 
 calculateHypoBtn.addEventListener("click", calculateHypotenuse);

@@ -9,6 +9,7 @@ const calculateScore = () => {
   let index = 0;
   let data = new FormData(quizForm);
   for (let value of data.values()) {
+    console.log(value);
     if (value === answers[index]) {
       score += 1;
     }
