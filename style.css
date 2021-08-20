@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #101010;
+  --primary: #57be6c;
+  --off-white: #eeedf0;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--off-white);
+
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 1.5em 0 1.5em 2em;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+  font-weight: 700;
+}
+
+.link--bold {
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.container {
+  width: min(80%, 550px);
+  margin: 0 auto 3em auto;
+  padding: 1em 3em 0 3em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 30px;
+}
+
+.question-container + .question-container {
+  margin-top: 2em;
+  margin-bottom: 1.3em;
+}
+
+.question {
+  margin-bottom: 0.5em;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.formula {
+  margin-top: 0;
+}
+
+label {
+  margin-bottom: 0.25em;
+}
+
+input[type="number"] {
+  font-size: 1.2rem;
+  margin-bottom: 1.1em;
+}
+
+button {
+  align-self: center;
+  font-size: 1.2rem;
+  margin-top: 0.75em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}

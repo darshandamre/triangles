@@ -5,22 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon" />
     <title>is triangle?</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li class="link--bold"><a href="./index.html">Is Triangle?</a></li>
+        <li class="link"><a href="./quiz.html">Quiz</a></li>
+        <li class="link"><a href="./hypotenuse.html">Hypotenuse</a></li>
+        <li class="link"><a href="./area.html">Area</a></li>
+      </ul>
+    </nav>
+
     <div class="container">
-      <h1 class="title">is triangle?</h1>
+      <h1 class="title">Is Triangle?</h1>
 
       <label for="angle1">angle 1</label>
-      <input type="number" name="angle1" id="angle1" />
+      <input class="angles" type="number" name="angle1" id="angle1" />
 
       <label for="angle2">angle 2</label>
-      <input type="number" name="angle2" id="angle2" />
+      <input class="angles" type="number" name="angle2" id="angle2" />
 
       <label for="angle3">angle 3</label>
-      <input type="number" name="angle3" id="angle3" />
+      <input class="angles" type="number" name="angle3" id="angle3" />
 
-      <button class="btn btn--check">check</button>
+      <button class="btn btn--check">Check</button>
 
       <h2 class="output"></h2>
     </div>

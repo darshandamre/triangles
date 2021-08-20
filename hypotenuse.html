@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>check hypotenuse</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="link"><a href="./index.html">Is Triangle?</a></li>
+        <li class="link"><a href="./quiz.html">Quiz</a></li>
+        <li class="link--bold"><a href="./hypotenuse.html">Hypotenuse</a></li>
+        <li class="link"><a href="./area.html">Area</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 class="title">Check Hypotenuse</h1>
+      <h2 class="formula">Length of Hypotenuse = sqrt(a² + b²)</h2>
+
+      <label for="side-a">a =</label>
+      <input type="number" id="side-a" />
+
+      <label for="side-b">b =</label>
+      <input type="number" id="side-b" />
+
+      <button class="btn--hypo">Calculate Hypotenuse</button>
+
+      <h2 id="output"></h2>
+    </div>
+    <script src="./hypotenuse.js"></script>
+  </body>
+</html>
