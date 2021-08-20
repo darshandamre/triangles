@@ -8,7 +8,7 @@ const output = document.querySelector("#output");
 const calculateArea = () => {
   if (base.value && height.value) {
     let area = 0.5 * base.value * height.value;
-    output.innerText = `Area of the Triangle is ${area}`;
+    output.innerHTML = `Area of the Triangle is ${area} cm${"2".sup()}`;
   } else {
     output.innerText = "Please enter values of both, base and height.";
   }
