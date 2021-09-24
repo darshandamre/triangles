@@ -10,6 +10,9 @@ const output = document.getElementById("output");
 
 const calculateHypotenuse = () => {
   if (sideA.value && sideB.value) {
+    if (sideA.value < 0 || sideB.value < 0) {
+      return (output.innerText = "Please enter positive values");
+    }
     let hypotenuse =
       Math.round(
         Math.sqrt(sideA.value * sideA.value + sideB.value * sideB.value) * 100
