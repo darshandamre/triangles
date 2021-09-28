@@ -5,16 +5,13 @@ const output = document.querySelector("#output");
 const answers = ["90", "right angled", "3"];
 
 const check = () => {
-  let radios = document.getElementsByName(
-    "question1" || "question2" || "question3"
-  );
+  let radios = document.querySelectorAll("input[type=radio]:checked");
 
-  for (let i = 0; i < radios.length; i++) {
-    if (radios[i].checked) {
-      return true;
-    }
+  if (radios.length == 0) {
+    return false;
   }
-  return false;
+
+  return true;
 };
 
 const calculateScore = () => {
