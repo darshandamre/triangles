@@ -10,7 +10,7 @@ const output = document.getElementById("output");
 
 const calculateHypotenuse = () => {
   if (sideA.value && sideB.value) {
-    if (sideA.value < 0 || sideB.value < 0) {
+    if (sideA.value <= 0 || sideB.value <= 0) {
       return (output.innerText = "Please enter positive values");
     }
     let hypotenuse =
