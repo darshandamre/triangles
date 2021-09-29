@@ -19,14 +19,20 @@ checkBtn.addEventListener("click", () => {
   let angles = Array.from(anglesInput).map((angle) => angle.value);
   let sum = sumOfAngles(...angles);
   let valuesEmpty = false;
+  let nonPositiveValue = false;
   angles.forEach((angle) => {
     if (angle === "") {
       valuesEmpty = true;
+    }
+    if (angle <= 0) {
+      nonPositiveValue = true;
     }
   });
 
   if (valuesEmpty) {
     output.innerText = "Please enter value of all three angles.";
+  } else if (nonPositiveValue) {
+    output.innerText = "Please enter positive values.";
   } else if (isTriangle(sum)) {
     output.innerText = "Yayy! The angles form a triangle.";
   } else {
